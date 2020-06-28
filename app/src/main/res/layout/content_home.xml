@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="50dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <com.example.razor_studios.shopappshoppers.NonScrollListView
+                        android:id="@+id/listview"
+                        android:layout_width="100dp"
+                        android:layout_height="fill_parent"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="10dp"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"/>
+
+                    <com.example.razor_studios.shopappshoppers.NonScrollListView
+                        android:id="@+id/listview_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/searchBar"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#fff">
+            <ImageView
+                android:id="@+id/toogleBar"
+                android:layout_width="50dp"
+                android:layout_height="46dp"
+                android:background="@drawable/icon_toggle"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/guidline"
+                    android:background="@drawable/icon_dropdown"/>
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.26" />
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/viewCart"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:background="@drawable/icon_shopping_cart"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

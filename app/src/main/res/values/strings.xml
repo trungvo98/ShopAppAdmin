@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Fikr ShopApp For Shoppers</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Habib Endris</string>
+    <string name="nav_header_subtitle">habibendris10@gmail.com</string>
+    <string name="select_language">Select Language</string>
+    <string name="main_login">Đăng nhập</string>
+    <string name="main_register">Đăng ký</string>
+    <string name="login_email_phone">Email or Phone Number</string>
+    <string name="login_password">Password</string>
+    <string name="register_fullname" translatable="false">Họ tên</string>
+    <string name="register_email">Email</string>
+    <string name="register_phone_number">Số điện thoại</string>
+    <string name="register_street_address">Địa chỉ</string>
+    <string name="register_home_number">Số nhà</string>
+    <string name="register_kebele">Kebele</string>
+    <string name="register_new_password">Mật khẩu mới</string>
+    <string name="register_confirm_password">Xác nhận mật khẩu</string>
+    <string name="register_create_account">Tạo mới</string>
+    <string name="checkout_product">Product</string>
+    <string name="checkout_title">Checkout</string>
+    <string name="checkout_quantity">Qty</string>
+    <string name="checkout_price">Price</string>
+    <string name="checkout_cart_price">Cart Price:</string>
+    <string name="checkout_sales_discount">TAX:</string>
+    <string name="checkout_total_price">CHECKOUT PRICE:</string>
+    <string name="checkout_continue_to_delivery">Confirm Delivery</string>
+    <string name="checkout_confirmation_pin">Enter Confirmation PIN</string>
+    <string name="orders_currenc">Birr</string>
+    <string name="orders_your_total">Your Total:</string>
+    <string name="orders_proceed_to_checkout">PROCEED TO CHECKOUT</string>
+    <string name="profile_delivery_details">Chi tiết giao hàng</string>
+    <string name="profile_account_password_settings">Cài đặt mật khẩu</string>
+    <string name="profile_old_password">Mật khẩu cũ</string>
+    <string name="profile_save_settings">Lưu thay đổi</string>
+    <string name="profile_title">Cài đặt</string>
+    <string name="menu_shopping_cart">Đơn đặt hàng</string>
+    <string name="menu_delivery_settings">Cài đặt</string>
+    <string name="menu_help">Trợ giúp</string>
+    <string name="menu_aboutus">Phần mềm</string>
+    <string name="menu_signout">Đăng xuất</string>
+    <string name="menu_list_item" translatable="false">Items</string>
+    <string name="checkout_do_not_enter">Please Do Not Enter any Thing in this Form Until You Receive Your Order?</string>
+    <string name="checkout_thanks_for_shopping">Thanks For Shopping With Us</string>
+    <string name="checkout_yes">Continue I Have Received</string>
+    <string name="checkout_no">No</string>
+    <string name="home_all">ALL</string>
+    <string name="home_shoes">SHOES</string>
+    <string name="home_kid_fashion">KID FASHIONS</string>
+    <string name="home_cosmetics">COSMETICS</string>
+    <string name="home_clothes">CLOTHES</string>
+    <string name="menu_add_new_item">Thêm sản phẩm</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:columnCount="1"
+    android:rowCount="1"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/contentArea">
+
+            <LinearLayout
+                android:id="@+id/elementDisplayLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/itemIcon"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@mipmap/ic_launcher_round"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:layout_margin="8dp"/>
+
+                <LinearLayout
+                    android:id="@+id/itemDetailLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/element_icon_background"
+                    android:paddingHorizontal="8dp">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:id="@+id/itemTitle"
+                        android:textColor="#343542"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_gravity="start"
+                        android:textAlignment="center"
+                        android:text="Placeholder Message"/>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:id="@+id/itemPrice"
+                            android:textColor="#343542"
+                            android:textSize="15dp"
+                            android:layout_gravity="start"
+                            android:textAlignment="center"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:text="325.99"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/itemID"
+                            android:visibility="invisible"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</GridLayout>

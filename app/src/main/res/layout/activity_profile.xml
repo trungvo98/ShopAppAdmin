@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/closeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/icon_back" />
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/profile_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="8dp"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:textColor="#444"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/profile_account_password_settings"
+                    android:id="@+id/passwordSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:paddingTop="6dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp"/>
+                <EditText
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/profile_old_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/profile_old_password"
+                    android:inputType="textPassword"
+                    android:textStyle="italic|bold"
+                    android:padding="12dp"/>
+
+                <EditText
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/profile_new_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/register_new_password"
+                    android:inputType="text"
+                    android:textStyle="italic|bold"
+                    android:padding="12dp"/>
+                <Button
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/saveSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/profile_save_settings"
+                    android:background="@drawable/login_button_background"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

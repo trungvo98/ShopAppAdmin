@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OrdersActivity"
+        android:id="@+id/OrdersActivity">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/closeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/icon_back" />
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Đơn đặt hàng"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="8dp"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:textColor="#444"/>
+            </LinearLayout>
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.example.razor_studios.shopappshoppers.NonScrollListView
+                        android:id="@+id/listview"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="179dp"
+                        android:background="@android:color/white"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:background="#fff"
+                        android:paddingVertical="15dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="25dp"
+                                android:paddingLeft="10dp"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:text="Tổng đơn đặt hàng: "/>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/orderTotalOrder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:paddingLeft="10dp"
+                                    android:text="2500"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="40dp"
+                                    android:paddingLeft="5dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:text="đơn"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>
